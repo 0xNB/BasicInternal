@@ -1,0 +1,6 @@
+Arma3H4ck/
+Debug/
+x64/
+Arma3H4ck.sln
+*.vcxproj
+*.filters
