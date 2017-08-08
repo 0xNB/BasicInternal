@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "Engine.h"
 #include <assert.h>
-#include "Utils.h"
+#include "ModuleUtils.h"
 #include <stdio.h>
 
 #define ADDRESS_WORLD 0x2913820 // ArmA-> - 400000
@@ -55,7 +55,7 @@
 Engine::Engine()
 {
 	clientDll = (DWORD)GetModuleHandleW(L"client.dll");
-	clientDllSize = Utils::GetModuleSize("client.dll");
+	clientDllSize = ModuleUtils::GetModuleSize("client.dll");
 	assert(clientDll);
 	printf("[ENGINE] Modules initialized");
 }

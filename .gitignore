@@ -4,3 +4,4 @@ x64/
 Arma3H4ck.sln
 *.vcxproj
 *.filters
+*.user
